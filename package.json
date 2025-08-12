@@ -1,0 +1,54 @@
+{
+  "name": "snarktor-proof-library",
+  "version": "1.0.0",
+  "description": "Zero knowledge proof verification library for Telos EVM with SNARKtor aggregation support",
+  "main": "src/GenericSnarktorClient.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat deploy",
+    "deploy:testnet": "npx hardhat deploy --network telos-testnet",
+    "deploy:mainnet": "npx hardhat deploy --network telos-mainnet",
+    "example": "node examples/generic-proof-integration.js",
+    "lint": "eslint src/ test/ examples/",
+    "lint:fix": "eslint src/ test/ examples/ --fix"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "zk-snark",
+    "proof-aggregation", 
+    "snarktor",
+    "telos",
+    "blockchain",
+    "merkle-tree",
+    "verification"
+  ],
+  "author": "Telos Foundation",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^4.3.8",
+    "eslint": "^8.48.0",
+    "hardhat": "^2.17.2",
+    "hardhat-deploy": "^0.11.37"
+  },
+  "files": [
+    "src/",
+    "contracts/",
+    "examples/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telos-foundation/snarktor-proof-library"
+  },
+  "bugs": {
+    "url": "https://github.com/telos-foundation/snarktor-proof-library/issues"
+  },
+  "homepage": "https://github.com/telos-foundation/snarktor-proof-library#readme"
+}
